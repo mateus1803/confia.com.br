@@ -35,28 +35,28 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Novas notícias</h1>
 
+
+        <!-- Segunda Seção de Vídeos usando YouTube -->
+        <div class="video-item mb-5">
+            <h3 class="video-title"></h3>
+            <div class="video-wrapper mb-3 embed-responsive embed-responsive-16by9">
+                <!-- Link de incorporação do YouTube -->
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/HbvuvXx0CcY?si=icxyxoIecwuA0mZl&amp;start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
         <!-- Primeira Seção de Vídeos -->
         <div class="video-item mb-5">
-            <h3 class="video-title">Título do Vídeo 1</h3>
+            <h3 class="video-title">História do 11 de setembro</h3>
             <div class="video-wrapper mb-3">
                 <video id="myVideo1" controls class="embed-responsive-item w-100">
-                    <source src="VidnozTextToVideo .mp4" type="video/mp4">
+                    <source src="VidnozTextToVideo.mp4" type="video/mp4">
                     Seu navegador não suporta o vídeo.
                 </video>
             </div>
             <button class="btn btn-primary" onclick="toggleVideo('myVideo1')">Pausar/Retomar</button>
         </div>
         
-        <!-- Segunda Seção de Vídeos usando o link de visualização direta do Google Drive -->
-        <div class="video-item mb-5">
-            <h3 class="video-title">História do 11 de setembro</h3>
-            <div class="video-wrapper mb-3 embed-responsive embed-responsive-16by9">
-                <!-- Link de visualização direta do Google Drive -->
-                <iframe src="https://drive.google.com/uc?export=view&id=18VEYomX-ukfToEFlX1v2vv7deNpS8dJ7" 
-                        class="embed-responsive-item w-100" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+        
 
         <!-- Modelo para Adicionar Mais Vídeos -->
         <!-- Copie a estrutura acima e ajuste os IDs e fontes dos vídeos para adicionar novos vídeos -->
