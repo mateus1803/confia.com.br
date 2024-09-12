@@ -3,38 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo Apresentação</title>
+    <title>Confia.com.br - Vídeos Diários</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="video-container">
-        <h1>Bem-vindo ao 11 de setembro oficial</h1>
-        
-        <!-- Primeiro Vídeo -->
-        <div class="video-item">
-            <div class="video-wrapper">
-                <video id="myVideo1" controls>
-                    <source src="VidnozTextToVideo.mp4" type="video/mp4">
+    <!-- Navbar usando Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Confia.com.br</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Novas notícias</h1>
+
+        <!-- Primeira Seção de Vídeos -->
+        <div class="video-item mb-5">
+            <h3 class="video-title">Título do Vídeo 1</h3>
+            <div class="video-wrapper mb-3">
+                <video id="myVideo1" controls class="embed-responsive-item w-100">
+                    <source src="VidnozTextToVideo .mp4" type="video/mp4">
                     Seu navegador não suporta o vídeo.
                 </video>
             </div>
-            <button onclick="toggleVideo('myVideo1')">Pausar/Retomar</button>
+            <button class="btn btn-primary" onclick="toggleVideo('myVideo1')">Pausar/Retomar</button>
         </div>
         
-        <!-- Segundo Vídeo -->
-        <div class="video-item">
-            <div class="video-wrapper">
-                <video id="myVideo2" controls>
-                    <source src="OutroVideo.mp4" type="video/mp4">
-                    Seu navegador não suporta o vídeo.
-                </video>
+        <!-- Segunda Seção de Vídeos usando o link de visualização direta do Google Drive -->
+        <div class="video-item mb-5">
+            <h3 class="video-title">História do 11 de setembro</h3>
+            <div class="video-wrapper mb-3 embed-responsive embed-responsive-16by9">
+                <!-- Link de visualização direta do Google Drive -->
+                <iframe src="https://drive.google.com/uc?export=view&id=18VEYomX-ukfToEFlX1v2vv7deNpS8dJ7" 
+                        class="embed-responsive-item w-100" allowfullscreen>
+                </iframe>
             </div>
-            <button onclick="toggleVideo('myVideo2')">Pausar/Retomar</button>
         </div>
-        
-        <!-- Adicione mais vídeos da mesma maneira -->
+
+        <!-- Modelo para Adicionar Mais Vídeos -->
+        <!-- Copie a estrutura acima e ajuste os IDs e fontes dos vídeos para adicionar novos vídeos -->
     </div>
 
+    <!-- JavaScript do Bootstrap e Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
