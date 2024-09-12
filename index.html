@@ -9,13 +9,30 @@
 <body>
     <div class="video-container">
         <h1>Bem-vindo ao 11 de setembro oficial</h1>
-        <div class="video-wrapper">
-            <video id="myVideo" controls>
-                <source src="VidnozTextToVideo.mp4" type="video/mp4">
-                Seu navegador não suporta o vídeo.
-            </video>
+        
+        <!-- Primeiro Vídeo -->
+        <div class="video-item">
+            <div class="video-wrapper">
+                <video id="myVideo1" controls>
+                    <source src="VidnozTextToVideo.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
+            <button onclick="toggleVideo('myVideo1')">Pausar/Retomar</button>
         </div>
-        <button onclick="toggleVideo()">Pausar/Retomar</button>
+        
+        <!-- Segundo Vídeo -->
+        <div class="video-item">
+            <div class="video-wrapper">
+                <video id="myVideo2" controls>
+                    <source src="OutroVideo.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
+            <button onclick="toggleVideo('myVideo2')">Pausar/Retomar</button>
+        </div>
+        
+        <!-- Adicione mais vídeos da mesma maneira -->
     </div>
 
     <script src="script.js"></script>
